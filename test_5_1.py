@@ -37,7 +37,12 @@ link_about.click()
 time.sleep(3)
 print("Click Link About")
 
+#cooki = driver.find_element(By.XPATH, '//*[@id="onetrust-button-group"]') #закрываем открытое cooki
+#cooki.click()
+
 driver.back()#возвращаемся на один шаг в браузере назад
 menu = driver.find_element(By.XPATH, '//button[@id="react-burger-cross-btn"]') #закрываем открытое меню, жмем на крестик
 menu.click()
 print("Click Menu Button")
+driver.forward()#делаем шаг вперед в браузере
+
